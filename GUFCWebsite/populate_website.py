@@ -23,7 +23,8 @@ def populate():
         {"title": "2s in unlucky Draw",
         "text":"Drew the game, bit of a surprise but the ref was poor"},
         {"title":"Tough Defeat for Seconds",
-        "text":"2s got beat, sure what can you do"} ]
+        "text":"2s got beat, sure what can you do"} 
+        ]
     
     club_news = [
         {"title": "GUFC win UEFA Gold Award",
@@ -31,10 +32,19 @@ def populate():
         {"title": "Quiz Night!",
         "text":"GUFC happy to announce that we will be hosting our first ever GUFC Past and Present Pub Quiz in Dram"},
         {"title":"Transfer News",
-        "text":"Don't believe what you read in the papers, C. Morgan has reassured the club of his desire to stay amidst rumours linking the centre-half to Celtic"} ]
+        "text":"Don't believe what you read in the papers, C. Morgan has reassured the club of his desire to stay amidst rumours linking the centre-half to Celtic"} 
+        ]
+
+    events = [
+        {"title": "Quiz Night",
+        "text":"GUFC happy to announce that we will be hosting our first ever GUFC Past and Present Pub Quiz in Dram"},
+        {"title": "Blood Drive",
+        "text":"Glasgow University FC are participating in the annual charity blood donation scheme"},
+    ]
 
     news_cats = {"match_reports": {"reports": match_reports},
-        "club_news": {"reports": club_news},}
+        "club_news": {"reports": club_news},
+        "events": {"reports": events},}
 
 # If you want to add more catergories or pages,
 # add them to the dictionaries above.

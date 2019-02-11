@@ -63,15 +63,17 @@ def thirdTeam(request):
 
     return render(request, 'website/thirdTeam.html', context=context_dict)
 
-def events(request):
-    context_dict = {}
-
-    return render(request, 'website/events.html', context=context_dict)
-
 def underTwentyOnes(request):
     context_dict = {}
 
     return render(request, 'website/underTwentyOnes.html', context=context_dict)
+
+def events(request):
+
+    events_list = Report.objects.filter(news_cat__name = "events")
+    context_dict = {"events": events_list}
+
+    return render(request, 'website/events.html', context_dict)
 
 def club_news(request):
     
