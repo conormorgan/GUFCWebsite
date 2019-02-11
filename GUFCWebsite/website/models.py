@@ -1,5 +1,6 @@
 from django.db import models
 from django.template.defaultfilters import slugify
+import datetime
 
 # Create your models here.
 
@@ -21,9 +22,10 @@ class News(models.Model):
 class Report(models.Model):
     news_cat = models.ForeignKey(News)
     title = models.CharField(max_length = 128)
-    #date = models.DateField()
     text = models.TextField()
     views = models.IntegerField(default = 0)
+    date = models.DateField(default=datetime.date.today)
+    image = models.ImageField(upload_to = "report_images/", null = True)
 
     def __str__(self):
         return self.title

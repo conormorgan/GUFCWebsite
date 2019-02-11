@@ -9,7 +9,7 @@ class NewsAdmin(admin.ModelAdmin):
 
 class ReportAdmin(admin.ModelAdmin):
 
-	list_display = ("title","news_cat","text","views")
+	list_display = ("title","news_cat","text","image","date")
 
 admin.site.register(News, NewsAdmin)
 admin.site.register(Report, ReportAdmin)

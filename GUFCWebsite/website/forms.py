@@ -7,7 +7,9 @@ class ReportForm(forms.ModelForm):
     title = forms.CharField(max_length = 128, widget =forms.TextInput(attrs = {"placeholder": "Report Title"}))
     text = forms.CharField(widget=forms.Textarea(attrs={"placeholder": "Enter text"} ))
     views = forms.IntegerField(widget = forms.HiddenInput(), initial = 0)
+    date = forms.DateField(widget=forms.DateInput(format='%m/%d/%Y'))
+
 
     class Meta:
         model = Report
-        fields = ("news_cat", "title","text","views")
+        fields = ("news_cat", "title","text","views","date")

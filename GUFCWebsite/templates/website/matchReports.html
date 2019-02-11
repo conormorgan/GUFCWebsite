@@ -16,8 +16,8 @@
         <ul>
             {% for report in match_reports %}
             <li>
-            <h5>{{ report.title}}</h5>
-            <p>{{ report.text }}</p>
+                <h4>{{ report.title}} <small>{{ report.date }}</small></h4>
+                <p>{{ report.text }}</p>
             </li>
             {% endfor %}
         </ul>

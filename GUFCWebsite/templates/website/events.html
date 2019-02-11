@@ -14,9 +14,8 @@
         <ul>
           {% for report in events %}
           <li>
-              <h4>{{ report.title }}</h4>
-              
-              {{ report.text }}
+              <h4>{{ report.title }} <small>{{ report.date }}</small></h4>
+              <p>{{ report.text }}</p>
           </li>
           {% endfor %}
         </ul>
