@@ -13,4 +13,5 @@ urlpatterns = [
     url(r'^matchReports/', views.matchReports, name='matchReports'),
     url(r'^add_news/$', views.add_report, name='add_report'),
     url(r'^events/$', views.events, name='events'),
+    url(r'^club_captain/$', views.club_captain, name='club_captain'),
 ]

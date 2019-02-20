@@ -22,21 +22,69 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-2">
-            <div class="card">
-                <img class="card-img-top" src="{% static 'images/ali.jpg' %}" alt="Card image" height="150"
-                     width="150">
-                <div class="card-body">
-                    <h4 class="card-title">Alistair </h4>
-                    <h4 class="card-title">Keith</h4>
-                    <pos class="card-text">Club Captain</pos>
-                    <a href="/website/firstTeam" *position*></a>
+
+            <div class="span3 well">
+                <center>
+                    <a href="#aboutModal" data-toggle="modal" data-target="#myModal"><img
+                            src="{% static 'images/ali.jpg' %}"
+                            name="aboutme" width="140" height="140" class="img-circle">
+                        <pos><h3>Ali Keith</h3></pos>
+                    </a>
+                </center>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                 aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <div class="modal-body">
+                            <center>
+                                <img src="{% static 'images/ali.jpg' %}"
+                                     name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+                                <h3 class="media-heading">Ali keith
+                                    <small>England</small>
+                                </h3>
+                                <span><strong>Bio: </strong></span>
+                                <span class="label label-info">Centre Back</span>
+                                <span class="label label-info">1st Team</span>
+                                <span class="label label-success">22/08/1996</span>
+                            </center>
+                            <hr>
+                            <center>
+                                <p class="text-left"><strong>Bio: </strong><br>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet
+                                    commodo
+                                    a, vulputate vel tellus.</p>
+                                <br>
+                            </center>
+                        </div>
+                        <div class="modal-footer">
+                            <center>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Back
+                                </button>
+                            </center>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <!--<div class="card">
+            <img class="card-img-top" src="{% static 'images/ali.jpg' %}" alt="Card image" height="150"
+                 width="150">
+            <div class="card-body">
+                <h4 class="card-title">Alistair </h4>
+                <h4 class="card-title">Keith</h4>
+                <a href="/website/club_captain">
+                    <pos class="card-text">Club Captain</pos>
+                </a>
+            </div>
+        </div>
+    </div>-->
         <div class="col-lg-2">
             <div class="card">
                 <img class="card-img-top" src="{% static 'images/liam.jpg' %}" alt="Card image" height="150"
-                        width="150">
+                     width="150">
                 <div class="card-body">
                     <h4 class="card-title">Liam </h4>
                     <h4 class="card-title">McHugh</h4>
@@ -48,7 +96,7 @@
         <div class="col-lg-2">
             <div class="card">
                 <img class="card-img-top" src="{% static 'images/conor.jpg' %}" alt="Card image" height="150"
-                        width="150">
+                     width="150">
                 <div class="card-body">
                     <h4 class="card-title">Conor </h4>
                     <h4 class="card-title">Morgan</h4>
@@ -60,7 +108,7 @@
         <div class="col-lg-2">
             <div class="card">
                 <img class="card-img-top" src="{% static 'images/dibble.jpg' %}" alt="Card image" height="150"
-                        width="150">
+                     width="150">
                 <div class="card-body">
                     <h4 class="card-title">Lewis </h4>
                     <h4 class="card-title">Dibble</h4>
@@ -71,14 +119,13 @@
         </div>
 
 
-
     </div>
     <br>
     <div class="row">
         <div class="col-lg-2">
             <div class="card">
                 <img class="card-img-top" src="{% static 'images/robbie.jpg' %}" alt="Card image" height="150"
-                        width="150">
+                     width="150">
                 <div class="card-body">
                     <h4 class="card-title">Robbie </h4>
                     <h4 class="card-title">Smith</h4>
@@ -102,7 +149,7 @@
         <div class="col-lg-2">
             <div class="card">
                 <img class="card-img-top" src="{% static 'images/chi.jpg' %}" alt="Card image" height="150"
-                        width="150">
+                     width="150">
                 <div class="card-body">
                     <h4 class="card-title">ChiHoi </h4>
                     <h4 class="card-title">Lee</h4>
@@ -114,7 +161,7 @@
         <div class="col-lg-2">
             <div class="card">
                 <img class="card-img-top" src="{% static 'images/colin.jpg' %}" alt="Card image" height="150"
-                        width="150">
+                     width="150">
                 <div class="card-body">
                     <h4 class="card-title">Colin </h4>
                     <h4 class="card-title">Granger</h4>
@@ -170,7 +217,7 @@
         <div class="col-lg-2">
             <div class="card">
                 <img class="card-img-top" src="{% static 'images/gregor.jpg' %}" alt="Card image" height="150"
-                        width="150">
+                     width="150">
                 <div class="card-body">
                     <h4 class="card-title">Gregor </h4>
                     <h4 class="card-title">Kerr</h4>
@@ -182,7 +229,7 @@
         <div class="col-lg-2">
             <div class="card">
                 <img class="card-img-top" src="{% static 'images/james_williamson.jpg' %}" alt="Card image" height="150"
-                        width="150">
+                     width="150">
                 <div class="card-body">
                     <h4 class="card-title">James </h4>
                     <h4 class="card-title">Williamson</h4>
@@ -278,10 +325,10 @@
     <br>
 </div>
 <div class="page-header">
-        <h1>
-            Child Wellbeing and Protection Officer
-            <small>2018/2019</small>
-        </h1>
+    <h1>
+        Child Wellbeing and Protection Officer
+        <small>2018/2019</small>
+    </h1>
 </div>
 <div>
     <h3>
@@ -300,13 +347,14 @@
 <div>
     <p>Ali Keith introduction statement about club policies</p>
     <ul>
-        <li><a href = "{% static 'policies/football-men-club-constitution.pdf' %}">Club Constitution</a></li>
-        <li><a href = "{% static 'policies/equity-policy.pdf' %}">Equity Policy</a></li>
-        <li><a href = "{% static 'policies/disability-discrimination-policy.pdf' %}">Disability Discrimination Policy</a></li>
-        <li><a href = "{% static 'policies/unacceptable-conduct-policy.pdf' %}">Unacceptable Conduct Policy</a></li>
-        <li><a href = "{% static 'policies/code-of-conduct.pdf' %}">Code of Conduct</a></li>
-        <li><a href = "{% static 'policies/customer-charter.pdf' %}">Customer Charter</a></li>
-        <li><a href = "{% static 'policies/childwellbeing-protection.pdf' %}">Childwellbeing policy</a></li>
+        <li><a href="{% static 'policies/football-men-club-constitution.pdf' %}">Club Constitution</a></li>
+        <li><a href="{% static 'policies/equity-policy.pdf' %}">Equity Policy</a></li>
+        <li><a href="{% static 'policies/disability-discrimination-policy.pdf' %}">Disability Discrimination Policy</a>
+        </li>
+        <li><a href="{% static 'policies/unacceptable-conduct-policy.pdf' %}">Unacceptable Conduct Policy</a></li>
+        <li><a href="{% static 'policies/code-of-conduct.pdf' %}">Code of Conduct</a></li>
+        <li><a href="{% static 'policies/customer-charter.pdf' %}">Customer Charter</a></li>
+        <li><a href="{% static 'policies/childwellbeing-protection.pdf' %}">Childwellbeing policy</a></li>
     </ul>
 </div>
 
@@ -318,7 +366,7 @@
 
 <div class="container">
     <div class="row">
-        <div class = "col-lg-4">
+        <div class="col-lg-4">
             <li>
                 We play at garscube
             </li>
@@ -365,17 +413,20 @@
                 So sure have a look and see
             </li>
         </div>
-        <div class = "col-lg-4">
-            <iframe width='100%' height='100%' id='mapcanvas' 
-            src='https://maps.google.com/maps?q=Garscube%20Sports%20Complex,%20Glasgow,%20United%20Kingdom&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=&amp;output=embed' 
-            frameborder='0' scrolling='no' marginheight='0' marginwidth='0'><div class="zxos8_gm"></div>
-            <div style='overflow:hidden;'><div id='gmap_canvas' style='height:100%;width:100%;'></div></div>
+        <div class="col-lg-4">
+            <iframe width='100%' height='100%' id='mapcanvas'
+                    src='https://maps.google.com/maps?q=Garscube%20Sports%20Complex,%20Glasgow,%20United%20Kingdom&amp;t=&amp;z=10&amp;ie=UTF8&amp;iwloc=&amp;output=embed'
+                    frameborder='0' scrolling='no' marginheight='0' marginwidth='0'>
+                <div class="zxos8_gm"></div>
+                <div style='overflow:hidden;'>
+                    <div id='gmap_canvas' style='height:100%;width:100%;'></div>
+                </div>
             </iframe>
         </div>
         <div class="col-lg-4">
             <iframe width="100%" height="100%" frameborder="0" style="border:0"
-            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJc9dFaqBFiEgRy4FvIGlpKyQ&key=AIzaSyAI_0xtqK5Pb6EZurak5e9oaQnfJtfzrjU" 
-            allowfullscreen></iframe>
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJc9dFaqBFiEgRy4FvIGlpKyQ&key=AIzaSyAI_0xtqK5Pb6EZurak5e9oaQnfJtfzrjU"
+                    allowfullscreen></iframe>
         </div>
     </div>
 </div>

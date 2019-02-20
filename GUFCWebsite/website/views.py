@@ -105,3 +105,9 @@ def add_report(request):
     context_dict = {"form": form}
 
     return render(request, "website/add_news.html", context_dict)
+
+
+def club_captain(request):
+    context_dict = {}
+
+    return render(request, 'website/club_captain.html', context=context_dict)
